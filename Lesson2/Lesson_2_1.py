@@ -8,7 +8,7 @@ some_tuple = (2, 4)
 some_set = {2, 4}
 boolean = True
 
-some_list = [some_string, number, some_tuple, some_array, boolean]
+some_list = [some_string, number, some_tuple, some_set, boolean]
 
 for i in some_list:
     print(type(i))
