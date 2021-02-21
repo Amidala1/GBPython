@@ -6,9 +6,6 @@
  Необходимо использовать написанную ранее функцию int_func().
 """
 
-form_string = ""
-
-
 def int_func(word):
 
     return word.swapcase().capitalize()
