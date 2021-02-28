@@ -10,7 +10,7 @@
 
 class Road:
 
-    def __init__(self, _length: [int, float], _width: [int, float]):
+    def __init__(self, _length: float, _width: float):
         try:
             self._length = float(_length)
             self._width = float(_width)
@@ -20,7 +20,7 @@ class Road:
         else:
             pass
 
-    def calc_mass(self, mass: [int, float]):
+    def calc_mass(self, mass: float):
         thickness: float = 0.05
         try:
             result = self._length * self._width * float(mass) * thickness
