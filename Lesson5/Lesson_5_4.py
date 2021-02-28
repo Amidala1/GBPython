@@ -12,7 +12,7 @@ Four — 4
 from os import path
 
 current_dir_name = path.dirname(__file__)
-file_name = path.join(current_dir_name, r"related_files/Lesson_5_4_1.txt")
+file_name = path.join(current_dir_name, r"example_files/Lesson_5_4_1.txt")
 new_file_name = path.join(current_dir_name, r"related_files/Lesson_5_4_2.txt")
 
 numbers_dict = {"One": "Один", "Two": "Два", "Three": "Три", "Four": "Четыре", }
