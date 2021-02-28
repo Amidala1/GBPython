@@ -11,7 +11,7 @@
 from os import path
 
 current_dir_name = path.dirname(__file__)
-file_name = path.join(current_dir_name, r"related_files/Lesson_5_6.txt")
+file_name = path.join(current_dir_name, r"example_files/Lesson_5_6.txt")
 
 final_dict = {}
 
