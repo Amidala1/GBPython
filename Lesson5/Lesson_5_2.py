@@ -6,7 +6,7 @@
 from os import path
 
 current_dir_name = path.dirname(__file__)
-file_name = path.join(current_dir_name, r"related_files/Lesson_5_2.txt")
+file_name = path.join(current_dir_name, r"example_files/Lesson_5_2.txt")
 
 with open(file_name, "r") as f:
     content = f.readlines()
