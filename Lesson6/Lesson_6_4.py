@@ -62,15 +62,17 @@ class PoliceCar(Car):
 
 
 police_car = PoliceCar("White", "Ford Mustang")
-police_car.go(60)
-police_car.turn("направо")
-police_car.show_speed()
-police_car.stop()
-print(police_car.is_police)
+police_car.go(60) # Машина поехала. Заданная скорость: 60 км/ч
+police_car.turn("направо") # Машина повернула направо
+police_car.show_speed() # Текущая скорость автомобиля: 60
+police_car.stop() # Машина остановилась
+town_car.show_speed() # Текущая скорость автомобиля: 0
+print(police_car.is_police) # True
 
 town_car = TownCar("Grey", "Hyundai Getz")
-town_car.go(80)
-town_car.turn("налево")
-town_car.show_speed()
-town_car.stop()
-print(town_car.is_police)
+town_car.go(80) # Машина поехала. Заданная скорость: 80 км/ч
+town_car.turn("налево") # Машина повернула налево
+town_car.show_speed() # Текущая скорость автомобиля: 80. Внимание! Превышена максимальная скорость
+town_car.stop() # Машина остановилась
+town_car.show_speed() # Текущая скорость автомобиля: 0
+print(town_car.is_police) # False

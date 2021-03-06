@@ -7,6 +7,7 @@
 Задачу можно усложнить, реализовав проверку порядка режимов, и при его нарушении выводить соответствующее сообщение и
 завершать скрипт.
 """
+
 from time import sleep
 
 
@@ -15,6 +16,7 @@ class TrafficLight:
 
     def running(self):
         count = 0
+        # ограничение кол-ва итераций цикла while
         while count <= 2:
             for key, value in self.__color.items():
                 print(f"Горит {key} свет. Осталось {value} секунд до смены режима")
