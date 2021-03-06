@@ -14,11 +14,9 @@ from sys import exit
 
 class AbstractClothes(ABC):
     clothing_param: float
-    consumption: float
 
     def __init__(self, clothing_param: float):
         self.clothing_param = clothing_param
-        self.consumption = 0
 
     # метод для определения расхода ткани
     @abstractmethod
