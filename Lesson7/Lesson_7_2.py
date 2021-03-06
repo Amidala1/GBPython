@@ -35,7 +35,7 @@ class Suit(AbstractClothes):
 
     def __str__(self):
         return f"Суммарный расход ткани на производство костюма на рост {self.clothing_param} см.: " \
-               f" {self.calc_material} кв.м."
+               f" {self.calc_material} кв.см."
 
 
 class Coat(AbstractClothes):
@@ -68,11 +68,11 @@ if __name__ == "__main__":
             user_choice = input("Введите 1 - для расчета ткани на производство костюма, 2 - на производство пальто, "
                                 "q - для выхода из программы: ")
             if user_choice == "1":
-                height = validate_user_input("Введите рост: ")
+                height = validate_user_input("Введите рост в см.: ")
                 suit = Suit(height)
-                print(suit)  # Суммарный расход ткани на производство костюма на рост ...:  ... кв.м.
+                print(suit)  # Суммарный расход ткани на производство костюма на рост ...:  ... кв.см.
             elif user_choice == "2":
-                size = validate_user_input("Введите размер: ")
+                size = validate_user_input("Введите размер в м.: ")
                 coat = Coat(size)
                 print(coat)  # Суммарный расход ткани на производство пальто размером ...:  ... кв.м.
             elif user_choice.lower() == "q":
