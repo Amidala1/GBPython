@@ -47,7 +47,7 @@ class Coat(AbstractClothes):
 
     def __str__(self):
         return f"Суммарный расход ткани на производство пальто размером {self.clothing_param}: " \
-               f" {self.calc_material} кв.м."
+               f" {self.calc_material} м."
 
 
 # функция для валидации введенного пользователем значения
@@ -70,11 +70,11 @@ if __name__ == "__main__":
             if user_choice == "1":
                 height = validate_user_input("Введите рост в см.: ")
                 suit = Suit(height)
-                print(suit)  # Суммарный расход ткани на производство костюма на рост ...:  ... кв.см.
+                print(suit)
             elif user_choice == "2":
                 size = validate_user_input("Введите размер в м.: ")
                 coat = Coat(size)
-                print(coat)  # Суммарный расход ткани на производство пальто размером ...:  ... кв.м.
+                print(coat)
             elif user_choice.lower() == "q":
                 print("\nВы вышли из программы")
                 exit(0)
