@@ -6,7 +6,10 @@
 
 
 class ComplexNumber:
-    def __init__(self, real_part: int, img_part: int = 0):
+    real_part: float
+    img_part: float
+    
+    def __init__(self, real_part: float, img_part: float = 0):
         self.complex_number = complex(real_part, img_part)
 
     def __add__(self, other):
@@ -19,7 +22,7 @@ class ComplexNumber:
         if isinstance(other, ComplexNumber):
             return f"Результат умножения: {self.complex_number * other.complex_number}"
         else:
-            return "Умнжаемые числа не являются комплексными"
+            return "Умножаемые числа не являются комплексными"
 
 
 if __name__ == "__main__":
